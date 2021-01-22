@@ -1,8 +1,9 @@
 import './index.css';
 import React from 'react';
+import {Elements} from './db2021';
 
 function App() {
-
+  const handleFocus = (event) => event.target.select();
   return (
     <div class="m-auto">
       <nav class="mx-auto">
@@ -21,10 +22,10 @@ function App() {
                         <span class="mt-1 ml-4">
                           <div class="flex items-start">
                             <div class="">
-                              <input id="comments" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
+                              <input id="toggleEN" name="toggleEN" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
                             </div>
                             <div class="ml-3 text-sm">
-                              <label for="comments" class="font-medium text-gray-700">EN Text</label>
+                              <label for="toggleEN" class="font-medium text-gray-700">EN Text</label>
                             </div>
                           </div>
                           </span>
@@ -44,34 +45,37 @@ function App() {
               <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-blue-800 text-white">
                   <tr>
-                    <th scope="col" width="40%" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
+                    <th scope="col" width="30%" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
                       Series Name
                     </th>
-                    <th scope="col" width="60%" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
+                    <th scope="col" width="70%" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
                       Attribution
                     </th>
                   </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
+                {Elements.map((a) => (
                   <tr>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="ml-4">
                           <div class="text-sm font-medium text-gray-900">
-                            JP Title
+                            {a.titleEN}
                           </div>
                           <div class="text-sm text-gray-500">
-                            EN Title
+                            {a.titleJP}
                           </div>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                      <div class="text-sm text-gray-900">
-                      <input type="text" name="attribution" class="border-2 rounded border-blue-500 w-full 100vw p-5" value="JP/EN Attribution" disabled/> 
+                      <div class="flex text-sm text-gray-900 ">
+                        <input type="text" class="border-2 rounded border-blue-500 w-full 100vw p-5" value={a.contentJP} onClick={handleFocus}/>
+                        <input type="text" class="border-2 rounded border-blue-500 w-full 100vw p-5" value={a.contentEN} onClick={handleFocus}/>
                       </div>
                     </td>
                   </tr>
+                ))}
                 </tbody>
               </table>
             </div>
