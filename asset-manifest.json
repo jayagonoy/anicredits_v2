@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/anicredits_v2/static/css/main.ce8130a8.chunk.css",
+    "main.js": "/anicredits_v2/static/js/main.5d96996b.chunk.js",
+    "main.js.map": "/anicredits_v2/static/js/main.5d96996b.chunk.js.map",
+    "runtime-main.js": "/anicredits_v2/static/js/runtime-main.74f61e67.js",
+    "runtime-main.js.map": "/anicredits_v2/static/js/runtime-main.74f61e67.js.map",
+    "static/js/2.0cf69ed6.chunk.js": "/anicredits_v2/static/js/2.0cf69ed6.chunk.js",
+    "static/js/2.0cf69ed6.chunk.js.map": "/anicredits_v2/static/js/2.0cf69ed6.chunk.js.map",
+    "static/js/3.f6787aa1.chunk.js": "/anicredits_v2/static/js/3.f6787aa1.chunk.js",
+    "static/js/3.f6787aa1.chunk.js.map": "/anicredits_v2/static/js/3.f6787aa1.chunk.js.map",
+    "index.html": "/anicredits_v2/index.html",
+    "static/css/main.ce8130a8.chunk.css.map": "/anicredits_v2/static/css/main.ce8130a8.chunk.css.map",
+    "static/js/2.0cf69ed6.chunk.js.LICENSE.txt": "/anicredits_v2/static/js/2.0cf69ed6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74f61e67.js",
+    "static/js/2.0cf69ed6.chunk.js",
+    "static/css/main.ce8130a8.chunk.css",
+    "static/js/main.5d96996b.chunk.js"
+  ]
+}
